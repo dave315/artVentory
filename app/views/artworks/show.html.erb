@@ -1,4 +1,6 @@
 <h1><%= @artwork.title %></h1>
 Number in Series: <%= @artwork.number_in_series %><br>
 Artwork Date: <%= @artwork.date %><br>
-Category: <%= @artwork.category.name %>
+Category: <%= @artwork.category.name %><br><br>
+
+<%= image_tag @artwork.photo, size: '500x500', class: 'artwork-photo' %>
