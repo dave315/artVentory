@@ -9,7 +9,7 @@
 <%= f.collection_select(:category_id, Category.all, :id, :name) %>
 
 <%= f.label :photo %>
-<%= f.text_field :photo %>
+<%= f.file_field :photo %>
 
 <%= f.label :artwork_date %>
 <%= date_field :artwork, :date %>
