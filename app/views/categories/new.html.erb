@@ -1,14 +1,17 @@
-<%= form_for @category do |f| %>
+<div class="row">
+  <%= form_for @category do |f| %>
 
-<%= f.label :name %>
-<%= f.text_field :name %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
 
-<%= f.label :total_printed %>
-<%= f.number_field :total_printed %>
+  <%= f.label :total_printed %>
+  <%= f.number_field :total_printed %>
 
-<%= f.label :description %>
-<%= f.text_area :description %>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
 
-<%= f.submit %>
+  <%= f.submit %>
 
-<% end %>
+  <% end %>
+
+</div>
