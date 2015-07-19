@@ -5,10 +5,25 @@ $white         : #ffffff;
 
 body {
   font-family: 'Lato', sans-serif;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
   font-family: 'Lobster Two', cursive;
+
+}
+
+.title-page h1{
+  color: $white;
+  margin-top: 40%;
+  font-size: 10em;
+  text-shadow: 2px 2px #ff0000;
 }
 
 #artwork-table tbody tr:hover {
