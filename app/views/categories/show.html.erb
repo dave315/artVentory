@@ -1,3 +1,32 @@
-<h1><%= @category.name %></h1>
-Total Printed: <%= @category.total_printed %><br>
-Description: <%= @category.description %><br>
+<div class="row">
+  <div class="text-center">
+    <h1><%= @category.name %></h1>
+    Total Printed: <%= @category.total_printed %><br>
+    Description: <%= @category.description %><br>
+  </div>
+
+  <table id="artwork-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Photo</th>
+        <th>Category</th>
+        <th>Series Number</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @category.artworks.each do |artwork| %>
+      <tr>
+        <td><%= artwork.id %></td>
+        <td><%= artwork.title %></td>
+        <td><%= image_tag artwork.photo, size: '125x125'%></td>
+        <td><%= artwork.category.name %></td>
+        <td><%= artwork.number_in_series %></td>
+        <td><%= artwork.date %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
