@@ -15,7 +15,7 @@ class ArtworksController < ApplicationController
     @artwork = Artwork.new(artwork_params)
 
     if @artwork.save
-      flash[:notice] = "Artwork Save Correctly."
+      flash[:notice] = "Artwork Saved Correctly."
       redirect_to artwork_path(@artwork)
     else
       flash[:notice] = "Artwork Not Saved."
